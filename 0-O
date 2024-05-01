@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main(void)
+{
+	FILE *file;
+
+	file = fopen("0-O", "w");
+
+	if (file == NULL) {
+		printf("Error opening file!\n");
+		return 1;
+	}
+	fprintf(file, "Best case: O(n)\n");
+	fprintf(file, "Average case: O(n^2)\n");
+	fprintf(file, "Worst case: O(n^2)\n");
+
+	fclose(file);
+
+	return 0;
+}
