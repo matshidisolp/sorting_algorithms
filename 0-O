@@ -1,5 +1,14 @@
 #include <stdio.h>
 
+/**
+ * main - Entry point of the program
+ *
+ * Description: Creates a file named "0-O" and writes the time
+ * complexity notations for the Bubble sort algorithm in it.
+ *
+ * Return: Always 0 (Success)
+ */
+
 int main(void)
 {
 	FILE *file;
